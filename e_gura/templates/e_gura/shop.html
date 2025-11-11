@@ -1,0 +1,194 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | TechnoAnt</title>
+  <link rel="stylesheet" href="{% static 'e_gura/css/styles.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <img src="{% static 'e_gura/images/logo.png' %}" alt="TechnoAnt Logo">
+      <h2>TechnoAnt</h2>
+    </div>
+    <nav>
+      <a href="#">Shop</a>
+      <a href="#">Track Order</a>
+      <a href="#">Affiliates</a>
+    </nav>
+  </header>
+
+  <!-- PRODUCTS HEADER -->
+  <section class="products-header">
+    <h1>Products</h1>
+    <div class="filters">
+      <div class="filter">
+        <label>Filter by:</label>
+        <select>
+          <option>All (1070)</option>
+          <option>TechnoAnt (1)</option>
+        </select>
+      </div>
+      <div class="sort">
+        <label>Sort by:</label>
+        <select>
+          <option>Best Selling</option>
+          <option>Price: Low to High</option>
+          <option>Price: High to Low</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section class="products-grid">
+    <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 1">
+      <div class="badge">SAVE 20%</div>
+      <h3>Multifunctional Peeler</h3>
+      <p class="price">$29.95 <span>$39.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 2">
+      <div class="badge">SAVE 25%</div>
+      <h3>Salad Cutter Bowl</h3>
+      <p class="price">$24.99 <span>$35.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+
+    <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 3">
+      <div class="badge">SAVE 30%</div>
+      <h3>Tea Diffuser Set</h3>
+      <p class="price">$19.99 <span>$25.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+       <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 3">
+      <div class="badge">SAVE 30%</div>
+      <h3>Tea Diffuser Set</h3>
+      <p class="price">$19.99 <span>$25.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+       <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 3">
+      <div class="badge">SAVE 30%</div>
+      <h3>Tea Diffuser Set</h3>
+      <p class="price">$19.99 <span>$25.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+       <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 3">
+      <div class="badge">SAVE 30%</div>
+      <h3>Tea Diffuser Set</h3>
+      <p class="price">$19.99 <span>$25.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+       <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 3">
+      <div class="badge">SAVE 30%</div>
+      <h3>Tea Diffuser Set</h3>
+      <p class="price">$19.99 <span>$25.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+       <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 3">
+      <div class="badge">SAVE 30%</div>
+      <h3>Tea Diffuser Set</h3>
+      <p class="price">$19.99 <span>$25.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+    <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 3">
+      <div class="badge">SAVE 30%</div>
+      <h3>Tea Diffuser Set</h3>
+      <p class="price">$19.99 <span>$25.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+     <div class="product-card">
+      <img src="{% static 'e_gura/images/cow.jpg' %}" alt="Product 3">
+      <div class="badge">SAVE 30%</div>
+      <h3>Tea Diffuser Set</h3>
+      <p class="price">$19.99 <span>$25.99</span></p>
+      <a href="#" class="btn-buy">Buy It Now</a>
+    </div>
+    <!-- More products dynamically loaded here -->
+  </section>
+
+  <!-- LOAD MORE BUTTON -->
+  <div class="load-more-container">
+    <button id="loadMore">Load More</button>
+  </div>
+  
+   <!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <!-- TOP INFO SECTION -->
+  <div class="footer-top">
+    <div class="feature">
+      <i class="fa-solid fa-truck"></i>
+      <h4>Free delivery worldwide</h4>
+      <p>Free standard shipping on all orders.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-headphones"></i>
+      <h4>Top-quality support</h4>
+      <p>24/7 customer support available for any questions.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-lock"></i>
+      <h4>Secure payments</h4>
+      <p>All payments are secured by Stripe.</p>
+    </div>
+    <div class="feature">
+      <i class="fa-solid fa-thumbs-up"></i>
+      <h4>Satisfaction guarantee</h4>
+      <p>We offer a satisfaction guarantee to all customers.</p>
+    </div>
+  </div>
+
+  <!-- MAIN FOOTER SECTION -->
+  <div class="footer-main">
+    <div class="footer-info">
+      <h3>Information</h3>
+      <ul>
+        <li><a href="#">Search</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Affiliate Program</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-newsletter">
+      <h3>Do you want to get unique gadgets?</h3>
+      <p>Subscribe to our newsletter:</p>
+      <form class="newsletter-form">
+        <input type="text" placeholder="First Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <label class="checkbox">
+          <input type="checkbox" checked> Email me with news and offers
+        </label>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+    <p>&copy; 2025 TechnoAnt. All rights reserved.</p>
+  </div>
+</footer>
+
+
+  <script src="{% static 'e_gura/js/shop.js' %}"></script>
+</body>
+</html>
