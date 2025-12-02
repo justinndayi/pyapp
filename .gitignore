@@ -1,17 +1,23 @@
-# Django
-*.log
-*.pot
+# Python bytecode
 *.pyc
 __pycache__/
-db.sqlite3
-/media
 
-# Environment
-.env
+# Django
+db.sqlite3
+/staticfiles/
+/media/
+
+# Virtual environment
+my_venv/
 venv/
 ENV/
-*.sqlite3
 
-# VSCode or IDE
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# IDE / Editor
 .vscode/
 .idea/
